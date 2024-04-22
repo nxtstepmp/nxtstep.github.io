@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Third Page</title>
+  <link rel="stylesheet" href="thirdpage.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">Logo</a>
+    </div>
+    <nav>
+      <a href="https://nexstepcode.wixstudio.io/nextstepcode">Home</a>
+      <a href="index.html">Tutorials</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <nav id="menu">
+    <div class="side-menu">
+      <div class="close-icon">X</div>
+      <ul>
+        <li>
+          C Programming
+          <button class="dropdown-btn">+</button>
+          <ul class="dropdown-content">
+            <li><a href="#primec">PRIME</a></li>
+            <li><a href="#reversec">REVERSE</a></li>
+            <li><a href="#factorialc">FACTORIAL</a></li>
+          </ul>
+        </li>
+        <li>Data Structures
+        <button class="dropdown-btn">+</button>
+        <ul class="dropdown-content">
+          <li><a href="#stack">STACK</a></li>
+          <li><a href="#queue">LINEAR QUEUE</a></li>
+          <li><a href="#dequeue">DEQUEUE</a></li>
+          <li><a href="#linear">LINEAR SEARCH</a></li>
+          <li><a href="#binary">BINARY SEARCH</a></li>
+          <li><a href="#linked">LINKED LIST</a></li>
+        </ul>
+       </li>       
+        <li>Java
+        <button class="dropdown-btn">+</button>
+        <ul class="dropdown-content">
+          <li><a href="#prime">PRIME</a></li>
+          <li><a href="#factorial">FACTORIAL</a></li>
+          <li><a href="#calculator">CALCULATOR</a></li>
+        </ul>
+        </li>
+        <!-- Add more list items and dropdowns as needed -->
+      </ul>
+    </div>
+  </nav>
+
+    <div class="hero">
+      <div class="menu-icon">☰</div>
+      <h1>Welcome to the Third Page</h1>
+      <section>
+        <h2 id="primec">PRIME</h2>
+        <h3>Prime number in C: Prime number is a number that is greater than 1 and divided by 1 or itself.<br>
+           In other words, prime numbers can't be divided by other numbers than itself or 1. <br>
+           For example 2, 3, 5, 7, 11, 13, 17, 19, 23.... are the prime numbers.<br>
+
+          Note: Zero (0) and 1 are not considered as prime numbers. <br>
+          Two (2) is the only one even prime number because all the numbers can be divided by 2.<br>
+          Let's see the prime number program in C. In this c program,<br>
+           we will take an input from the user and check whether the number is prime or not.</h3>
+        <h2 id="reversec">REVERSE</h2>
+        <p>This is where you can find all about stack </p>
+        <h2 id="factorialc">FACTORIAL</h2>
+        <h3>Here, 5! is pronounced as "5 factorial", it is also called "5 bang" or "5 shriek".
+
+          The factorial is normally used in Combinations and Permutations (mathematics).<br>
+          
+          There are many ways to write the factorial program in c language. Let's see the 2 ways to write the factorial program.
+        </h3>
+        <h2 id="stack">STACK</h2>
+        <p>
+          <b>1. Stack</b><br>
+          A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. This means the last element added to the stack will be the first to be removed. It's similar to a stack of plates; the last plate placed on the stack is the first one you'd take off.<br>
+          <b>2. Operations on Stack</b><br><br>
+          The main operations that can be performed on a stack are:<br><br>
+          Push: This operation adds an element to the top of the stack. In the code, the push() function checks if the stack is already full by comparing the top index with max (the maximum size of the stack). If not full, it increments the top index and adds the new element at this position.<br>
+          Pop: This operation removes the element on the top of the stack. The pop() function first checks if the stack is empty (i.e., top is zero). If not, it decrements the top index, effectively removing the element from the stack and also displaying which element was removed.<br>
+          Display: This function prints all elements in the stack from the bottom to the top. If the stack is empty, it displays "Stack EMPTY".<br><br>
+          <b>3. Handling Stack Capacity</b><br><br>
+          Overflow: Occurs when trying to add an element to a full stack. The code checks this condition in the push() function with if(top >= max).<br>
+          Underflow: Occurs when trying to remove an element from an empty stack. This condition is checked in the pop() function with if(top == 0).<br><br>
+          <b>4. Array-Based Stack Implementation</b><br><br>
+          Stack Storage: The stack is stored using a fixed-size array (int stack[50]). The size limit (maximum elements the stack can hold) is determined by user input and stored in max.<br>
+          Top of Stack: A variable top is used to keep track of the top position of the stack. This variable is incremented when a new element is pushed onto the stack and decremented when an element is popped off.<br><br>
+          <b>5. User Interaction</b><br><br>
+          Menu System: The program provides a menu-driven interface for the user to perform stack operations. It continuously prompts the user to choose among pushing, popping, displaying the stack, or exiting the program.<br><br>
+          <b>6. Error Handling</b><br><br>
+          Basic Error Messages: The code includes basic error handling for stack overflow and underflow, and it notifies the user of incorrect menu choices.<br>
+        </p>
+        <a href="DS\stack.c">Click here to show the code. </a> 
+        <h2 id="queue">LINEAR QUEUE</h2>
+        <p>This program implements a basic queue data structure using an array. A queue typically follows a FIFO (First In First Out) approach, where the first element added to the queue is the first one to be removed.<br>  Your program allows basic queue operations like insertion, deletion, and display, and it lets the user interact with the queue through a simple menu-driven interface.<br> <br> 
+
+          Explanation:<br> <br> 
+          Global Variables: Variables f (front), r (rear), n (max size of the queue), ch (choice), item (current item to be processed), and queue (the queue itself) are declared globally.<br> 
+          Functions: insert(), delete(), and display() handle the operations on the queue.<br> <br> 
+          Queue Behavior:<br> <br> 
+          Insert: Adds elements to the rear. If the queue is full, it reports an overflow condition.<br> 
+          Delete: Removes elements from the front. If the queue is empty, it reports an underflow condition.<br> 
+          Display: Shows all elements from front to rear.<br> 
+          This setup is typical for learning environments where the fundamental operations on queues are demonstrated. It's worth noting that this program uses a non-circular implementation of the queue, which means once the queue fills and elements are removed, the space they occupied can't be reused without reinitializing the queue.<br> 
+          </p>
+        <a href="DS\lqueue.c">Click here to show the code. </a> 
+        <h2 id="dequeue">DEQUEUE</h2>
+        <p>A Double-Ended Queue, commonly known as a deque. A deque is a type of data structure that allows elements to be added or removed from both the front and the rear.<br>
+           This flexibility makes deques a highly versatile data structure, useful in various scenarios where neither stacks (LIFO - Last In First Out) nor queues (FIFO - First In First Out) would be perfectly efficient.<br><br>
+          <b>Key Characteristics of Deque:</b><br><br>
+          Bidirectional Operations: Elements can be added or removed from both ends.<br>
+          Dynamic Size: The size can increase or decrease as elements are added or removed, although in your static array implementation, the size is fixed.<br>
+          Non-indexed Access: Unlike lists, deques typically do not allow for random access to elements based on indices.<br><br>
+          <b>Types of Deques:</b><br><br>
+          The C program implements two specific variations of deques, controlled by user input:<br>
+          Input Restricted Deque: This allows insertions at one end but deletions at both ends. In your program, elements can only be inserted at the rear but can be deleted from either the front or the rear.<br>
+          Output Restricted Deque: This allows deletions at one end but insertions at both ends. In this case, elements can be deleted only from the front but can be inserted at both the front and the rear.<br><br>
+          <b>Implementation Details:</b><br><br>
+          Array-Based Storage: The deque uses a static array of size 50 (int DQ[50]), which means it can store up to 50 integers.<br>
+          Front and Rear Pointers: The deque uses F and R to keep track of the front and rear positions within the array. These pointers help in identifying where the next insertion or deletion should occur.<br>
+          Circular Handling: To efficiently use the array space and to facilitate wrap-around at the boundaries (when the array end is reached but space is available at the beginning), the implementation manipulates the F and R pointers in a circular fashion.<br><br>
+          <b>Operations:</b><br><br>
+          Insert Rear (insertRear()): Adds an element to the end of the deque.<br>
+          Insert Front (insertFront()): Adds an element to the front of the deque.<br>
+          Delete Front (deleteFront()): Removes an element from the front of the deque.<br>
+          Delete Rear (deleteRear()): Removes an element from the rear of the deque.<br>
+          Display (display()): Shows all the elements currently in the deque, illustrating the circular nature if the deque wraps around the array's end.<br><br>
+          <b>Usage Scenario:</b><br><br>
+          Deques are particularly useful in scenarios where elements need to be processed from both ends, such as in certain algorithms like palindrome checking, where you need to compare elements from both ends of a sequence.<br> They are also used in implementing various other data structures, scheduling algorithms, and even in certain cache implementations.<br>
+          By giving the user the choice between input-restricted and output-restricted operations, the program showcases the flexibility and versatility of deques in managing double-ended operations according to specific requirements.
+           </p>
+           <a href="DS\deq.c">Click here to show the code. </a> 
+        <h2 id="linear">LINEAR SEARCH</h2>
+        <p> A straightforward approach to searching within an array, utilizing a fundamental data structure concept is known as Linear Search<br><br>
+          <b>1. Array</b><br><br>
+          The primary data structure used in the program is an array, a collection of elements (values or variables) that are accessed by numerical indices. Arrays in C are a type of data structure for storing elements of the same data type and provide an efficient way of declaring a group of variables. The key characteristics of arrays are:<br>
+          Fixed Size: Once declared, the size of the array is fixed. In this case, the array can hold up to 50 integers (int a[50]).<br>
+          Contiguous Memory Allocation: All elements of the array are stored in contiguous memory locations, which allows any element to be accessed efficiently using an index.<br><br>
+          <b>2. Linear Search</b><br><br>
+          The search technique used in the program is linear search, which is one of the simplest searching algorithms:<br>
+          Sequential Access: Linear search checks each element of the array sequentially starting from the first element to the last element until the target element (search) is found or the end of the array is reached.<br>
+          Time Complexity: Because each element is inspected sequentially, the worst-case time complexity of linear search is O(n)O(n), where nn is the number of elements in the array. This means that in the worst case, every element in the array will need to be checked, making linear search inefficient for large datasets.<br>
+          Implementation Simplicity: Despite its inefficiency in large datasets, linear search is popular due to its simplicity and ease of implementation, especially when the array size is small or the array is unsorted and other more efficient search algorithms (like binary search) are not applicable.<br><br>
+          <b>3. Flag Variable</b><br><br>
+          The program also uses a simple technique involving a flag variable (f) to track whether the search element has been found:<br>
+          Flag Use: A flag variable is a common technique used to signal the occurrence of a certain condition (in this case, finding the target element). The flag f is initially set to 0 (indicating the element hasn't been found) and is set to 1 once the element is found.<br><br>
+          
+          
+         <b> Conclusion</b><br><br>
+          This program effectively demonstrates how to implement a linear search in an array, utilizing basic control structures (like loops and conditionals) in C. The use of arrays and linear search represents fundamental data structure and algorithm concepts that form the backbone of more complex computational procedures and applications. While linear search is straightforward, its practical use is generally limited to small or unsorted datasets where other more efficient algorithms are not suitable.<br><br>
+          </p>
+          <a href="DS\linear.c">Click here to show the code. </a> 
+        <h2 id="binary">BINARY SEARCH</h2>
+        <p><b>1. Sorting an Array: Bubble Sort</b><br><br>
+          Firstly, the program sorts an array of integers. Sorting is the process of arranging data in a specific order, typically ascending or descending. Here, the program uses a method called Bubble Sort. This method works by repeatedly stepping through the list, comparing adjacent elements, and swapping them if they are in the wrong order. The process is repeated until no swaps are needed, which means the list is sorted.<br>
+          How Bubble Sort Works in Your Program:<br><br>
+          The program prompts the user to enter several integers which are stored in an array.<br>
+          It then goes through the array multiple times. For each pass, it compares each number with the one next to it.<br>
+          If a number is greater than the one following it, they are swapped. This makes the larger numbers "bubble up" to the end of the array with each complete pass through the array.<br>
+          This continues until the entire array is sorted from smallest to largest.<br><br>
+          <b>2. Searching an Array: Binary Search</b><br><br>
+          After sorting, the program performs a binary search to find a specific element. Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed the possible locations to just one.<br><br>
+          <b>How Binary Search Works in Your Program:</b><br><br>
+          After sorting the array, the program asks the user to enter the value they are looking for.<br>
+          It starts with two pointers, one pointing at the beginning of the array (low) and one at the end (high).<br>
+          The program then calculates the midpoint of the array. If the middle element is equal to the searched value, the search is complete.<br>
+          If the middle element is less than the searched value, the search continues in the upper half of the array (i.e., between the middle and the end).<br>
+          Conversely, if the middle element is greater than the searched value, the search continues in the lower half of the array (i.e., between the start and the middle).<br>
+          This process repeats, narrowing down the potential locations until the value is found or the low pointer exceeds the high pointer, which means the value isn't in the array.<br><br>
+          <b>Conclusion</b><br><br>
+          By first sorting the array and then performing a binary search, your program efficiently finds whether a specific number is present. This combination showcases fundamental data manipulation techniques:<br>
+          Sorting makes data easier to analyze or apply further algorithms on (like binary search).<br>
+          Binary search leverages the sorted order to quickly locate an element, demonstrating a powerful approach for handling structured data efficiently.<br>
+           </p>
+           <a href="DS\binary.c">Click here to show the code. </a> 
+        <h2 id="linked">LINKED LIST</h2>
+        <p>a fundamental data structure in computer science. Let's break down the key concepts and components of this data structure as illustrated in the program:<br><br>
+          <b>1. Node Structure</b><br><br>
+          A singly linked list is built from a series of elements called "nodes." Each node in the list contains:<br><br>
+          Data: This is the actual value stored in the node. In your program, it's an integer (int data).<br><br>
+          Link (or Next pointer): This is a pointer to the next node in the list (struct node *link). This is how the list maintains its sequence, with each node pointing to the next one.<br><br>
+          <b>2. Pointers Used in Linked Lists</b><br><br>
+          The program uses several pointers to manage the list:<br><br>
+          first: Points to the first node of the list. If first is NULL, the list is empty.<br><br>
+          new: A temporary pointer used to create new nodes when data is added to the list.<br><br>
+          ptr and temp: Utility pointers used to traverse the list and to hold references during insertions and deletions.<br><br>
+          <b>3. Linked List Operations</b><br><br>
+          The program supports multiple operations on the linked list, reflecting its dynamic nature:<br>
+          Insertion: Nodes can be added:<br><br>
+          At the beginning (insert_beginning): The new node becomes the new first node.<br>
+          At the end (insert_end): The new node is appended after the current last node.<br>
+          After a specific node (insert_betweenAF): The new node is placed right after a node with a given value.<br>
+          Before a specific node (insert_betweenBF): The new node is placed right before a node with a given value.<br>
+          Deletion: Nodes can be removed:<br>
+          From the beginning (delete_beginning): The first node is removed, and the second node becomes the new first node.<br>
+          From the end (delete_end): The last node is removed from the list.<br>
+          A specific node (delete_betweeen): Any node matching a specified value is removed from the list.<br>
+          Traversal (traverse): The list is walked from the first node to the last, and each node’s data is displayed. This operation is used to show the list after most operations to give immediate feedback of the list's state.<br><br>
+          <b>4. Memory Management</b><br><br>
+          Memory management is crucial in a linked list implemented in C:<br><br>
+          Allocation (malloc): New nodes are dynamically allocated memory using malloc.<br>
+          Deallocation (free): When nodes are deleted, memory must be freed to prevent memory leaks.<br><br>
+          <b>5. Robustness and Error Handling</b><br>
+          The code handles several potential errors:<br><br>
+          Memory allocation failure: Before using a newly created node, the program checks if malloc returned NULL, indicating that memory allocation failed.<br>
+          Operations on an empty list: Before performing deletions or specific insertions, the code checks if first is NULL.<br><br>
+          <b>6. Usage</b><br><br>
+          The program uses a menu-driven approach, allowing the user to choose what operation to perform on the list. This makes it user-friendly and interactive, suitable for educational purposes or testing basic list operations.<br>
+          By using these concepts, the program effectively demonstrates how to manage and manipulate a singly linked list, including dynamic memory usage, pointer manipulation, and basic error handling.<br>
+           </p>
+           <a href="DS\SingleLinkedList.c">Click here to show the code. </a>    
+        <h2 id="prime">PRIME IN JAVA</h2>
+        <p>This is where you can find all about stack </p>
+        <h2 id="factorial">FACTORIAL IN JAVA </h2>
+        <a href="random.txt">Click here find all about some random comprehension. </a>
+        <h2 id="calculator">CALCULATOR</h2>
+        <p>This is where you can find all about stack </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Third Page. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
